@@ -1,3 +1,6 @@
+from fastapi import FastApi
+
+
 def main():
     print("Hello from server!")
 
