@@ -43,7 +43,7 @@ const posts: Article[] = [
 
 function BlogLandingPage() {
   return (
-    <div className="flex flex-col width-full items-center mt-12 align-items-start px-4 relative overflow-y-auto no-scrollbar font-sans">
+    <div className="flex flex-col w-[200vw] h-[200vh] items-center mt-12 px-4 relative overflow-y-auto no-scrollbar font-sans dotted-background">
       {/* Animated background gradient */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 animate-gradient-move"
@@ -62,10 +62,11 @@ function BlogLandingPage() {
           className="text-xl mt-4 font-light tracking-wide text-[#7fb4ff] animate-fade-in bg-[var(--background-paper)] p-2 rounded-md shadow-md border border-[var(--divider)]"
           style={{ animationDelay: "0.4s" }}
         >
-          A blog about design, science, programming, and everything in between.
+          My space about design, science, programming, and everything in
+          between.
         </p>
       </header>
-      <div className="w-full max-w-4xl px-6 py-4 pb-8 flex flex-col items-start">
+      <div className="w-full max-w-4xl px-6 py-4 pb-8 flex flex-col items-start ">
         <h2 className="text-6xl font-bold tracking-tight uppercase leading-tight font-sans text-[#e6e6e6] animate-fade-in">
           Posts
         </h2>

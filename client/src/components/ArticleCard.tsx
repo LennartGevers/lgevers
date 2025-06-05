@@ -14,7 +14,7 @@ export const ArticleCard = ({
 }: ArticleCardProps): React.ReactNode => {
   return (
     <article
-      className="bg-[var(--background-paper)]/90 border border-[var(--divider)] p-6 rounded-md shadow-lg transition hover:bg-[var(--background)]/100 animate-fade-in"
+      className="bg-[var(--background-paper)]/90 border border-[var(--divider)] p-6 rounded-md shadow-lg transition hover:bg-[var(--background)]/100 hover:scale-105 animate-fade-in"
       style={{ animationDelay: `${0.5 + positionIndex * 0.1}s` }}
     >
       <h2 className="text-lg font-semibold tracking-wide mb-1 text-[#e6e6e6]">

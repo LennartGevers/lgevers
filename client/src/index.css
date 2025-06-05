@@ -20,7 +20,7 @@
   --divider: #333c49;
 }
 
-body {
+body .dotted-background {
   background-color: var(--background);
   background-image:
     radial-gradient(circle at 1px 1px, var(--light-blue-transparent) 1px, transparent 0),
@@ -31,6 +31,11 @@ body {
     radial-gradient(circle at 10px 1px, var(--light-blue-transparent) 1px, transparent 0),
     radial-gradient(circle at 16px 1px, var(--light-blue-transparent) 1px, transparent 0);
   background-size: 20px 20px; /* Total repeat cycle for the pattern */
+}
+
+.react-transform-wrapper .react-transform-component {
+  width: 100%;
+  height: 100%;
 }
 
 @layer utilities {
