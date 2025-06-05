@@ -43,7 +43,7 @@ const posts: Article[] = [
 
 function BlogLandingPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  px-4 relative overflow-hidden font-sans">
+    <div className="flex flex-col items-center justify-center px-4 relative overflow-hidden font-sans">
       {/* Animated background gradient */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 animate-gradient-move"
