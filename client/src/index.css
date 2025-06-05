@@ -14,3 +14,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@layer utilities {
+  @keyframes gradient-move {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient-move {
+    animation: gradient-move 10s ease-in-out infinite;
+    background-size: 200% 200%;
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+  .animate-fade-in {
+    animation: fade-in 1s both;
+  }
+}
