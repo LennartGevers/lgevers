@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { Article } from "../types";
+import { Chip } from "./Chip";
 
 export interface ArticleCardProps extends Article {
   positionIndex: number;
@@ -13,7 +14,7 @@ export const ArticleCard = ({
 }: ArticleCardProps): React.ReactNode => {
   return (
     <article
-      className="bg-[var(--background)]/90 border border-[#282c34] p-6 rounded-md shadow-lg transition hover:bg-[var(--background)]/100 animate-fade-in"
+      className="bg-[var(--background-paper)]/90 border border-[var(--divider)] p-6 rounded-md shadow-lg transition hover:bg-[var(--background)]/100 animate-fade-in"
       style={{ animationDelay: `${0.5 + positionIndex * 0.1}s` }}
     >
       <h2 className="text-lg font-semibold tracking-wide mb-1 text-[#e6e6e6]">
@@ -28,12 +29,7 @@ export const ArticleCard = ({
       </a>
       <div className="flex flex-wrap gap-2 mt-2">
         {tags.map((tag) => (
-          <span
-            key={tag}
-            className="px-2 py-0.5 rounded-full bg-[#282c34] text-xs text-[#7fb4ff] border border-[#3a4151] font-medium"
-          >
-            {tag}
-          </span>
+          <Chip key={tag}>{tag}</Chip>
         ))}
       </div>
     </article>

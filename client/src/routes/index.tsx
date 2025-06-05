@@ -43,7 +43,7 @@ const posts: Article[] = [
 
 function BlogLandingPage() {
   return (
-    <div className="flex flex-col items-center justify-center px-4 relative overflow-hidden font-sans">
+    <div className="flex flex-col width-full items-center mt-12 align-items-start px-4 relative overflow-y-auto no-scrollbar font-sans">
       {/* Animated background gradient */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 animate-gradient-move"
@@ -54,18 +54,23 @@ function BlogLandingPage() {
         }}
       />
       {/* Minimal Navigation Header */}
-      <header className="w-full max-w-3xl px-6 py-2 bg-[var(--background)] border-b border-[#282c34] pb-8 mb-12 flex flex-col items-start">
-        <h1 className="text-5xl font-bold tracking-tight uppercase leading-tight font-sans text-[#e6e6e6] animate-fade-in">
-          My Swiss Blog
+      <header className="w-full max-w-4xl px-6 py-2 pb-8 mb-12 flex flex-col items-start">
+        <h1 className="text-8xl font-bold tracking-tight uppercase leading-tight font-sans text-[#e6e6e6] animate-fade-in">
+          Lennart Gevers
         </h1>
         <p
-          className="text-xl mt-4 font-light tracking-wide text-[#7fb4ff] animate-fade-in"
+          className="text-xl mt-4 font-light tracking-wide text-[#7fb4ff] animate-fade-in bg-[var(--background-paper)] p-2 rounded-md shadow-md border border-[var(--divider)]"
           style={{ animationDelay: "0.4s" }}
         >
-          Insights, stories, and thoughts — designed with Swiss precision.
+          A blog about design, science, programming, and everything in between.
         </p>
       </header>
-      <main className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="w-full max-w-4xl px-6 py-4 pb-8 flex flex-col items-start">
+        <h2 className="text-6xl font-bold tracking-tight uppercase leading-tight font-sans text-[#e6e6e6] animate-fade-in">
+          Posts
+        </h2>
+      </div>
+      <main className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-8">
         {posts.map((post, positionIndex) => (
           <ArticleCard
             key={post.title}

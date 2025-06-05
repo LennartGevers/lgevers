@@ -15,7 +15,9 @@
 
 
   --background: #1e2127;
+  --background-paper: #23252a;
   --light-blue-transparent: #96afd763;
+  --divider: #333c49;
 }
 
 body {
@@ -46,5 +48,13 @@ body {
   }
   .animate-fade-in {
     animation: fade-in 1s both;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
