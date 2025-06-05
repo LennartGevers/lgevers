@@ -18,7 +18,7 @@
   --light-blue-transparent: #96afd763;
 }
 
-.dottedBackground {
+body {
   background-color: var(--background);
   background-image:
     radial-gradient(circle at 1px 1px, var(--light-blue-transparent) 1px, transparent 0),

@@ -52,15 +52,7 @@ function BlogLandingPage() {
         }}
       />
       {/* Minimal Navigation Header */}
-      <nav className="w-full max-w-3xl flex justify-between items-center py-6 mb-8">
-        <span className="text-2xl font-bold uppercase tracking-widest text-[#c9c9c9] animate-fade-in">SwissBlog</span>
-        <div className="flex gap-6 text-sm font-medium">
-          <a href="#" className="hover:text-[#7fb4ff] text-[#a3aed2] transition-colors animate-fade-in" style={{ animationDelay: '0.1s' }}>Home</a>
-          <a href="#" className="hover:text-[#7fb4ff] text-[#a3aed2] transition-colors animate-fade-in" style={{ animationDelay: '0.2s' }}>About</a>
-          <a href="#" className="hover:text-[#7fb4ff] text-[#a3aed2] transition-colors animate-fade-in" style={{ animationDelay: '0.3s' }}>Contact</a>
-        </div>
-      </nav>
-      <header className="w-full max-w-3xl border-b border-[#282c34] pb-8 mb-12 flex flex-col items-start">
+      <header className="w-full max-w-3xl px-6 py-2 bg-[var(--background)] border-b border-[#282c34] pb-8 mb-12 flex flex-col items-start">
         <h1 className="text-5xl font-bold tracking-tight uppercase leading-tight font-sans text-[#e6e6e6] animate-fade-in">
           My Swiss Blog
         </h1>
@@ -72,7 +64,7 @@ function BlogLandingPage() {
         {posts.map((post, i) => (
           <article
             key={post.title}
-            className="bg-[#23262b]/80 border border-[#282c34] p-6 rounded-md shadow-lg transition hover:bg-[#23262b]/95 animate-fade-in"
+            className="bg-[var(--background)]/90 border border-[#282c34] p-6 rounded-md shadow-lg transition hover:bg-[var(--background)]/100 animate-fade-in"
             style={{ animationDelay: `${0.5 + i * 0.1}s` }}
           >
             <h2 className="text-lg font-semibold tracking-wide mb-1 text-[#e6e6e6]">{post.title}</h2>
@@ -91,10 +83,6 @@ function BlogLandingPage() {
           </article>
         ))}
       </main>
-      <footer className="w-full max-w-3xl mt-16 border-t border-[#282c34] pt-6 flex justify-between text-[#a3aed2] text-xs tracking-widest uppercase animate-fade-in" style={{ animationDelay: '1.2s' }}>
-        <span>&copy; {new Date().getFullYear()} My Swiss Blog</span>
-        <span>All rights reserved</span>
-      </footer>
     </div>
   );
 }
