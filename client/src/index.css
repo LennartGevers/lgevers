@@ -7,12 +7,28 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  --background: #1e2127;
+  --light-blue-transparent: #96afd763;
+}
+
+.dottedBackground {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(circle at 1px 1px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 1px 5px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 1px 10px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 1px 16px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 5px 1px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 10px 1px, var(--light-blue-transparent) 1px, transparent 0),
+    radial-gradient(circle at 16px 1px, var(--light-blue-transparent) 1px, transparent 0);
+  background-size: 20px 20px; /* Total repeat cycle for the pattern */
 }
 
 @layer utilities {

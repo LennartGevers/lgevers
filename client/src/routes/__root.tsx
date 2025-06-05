@@ -7,8 +7,8 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <React.Fragment>
-      <Outlet />
-    </React.Fragment>
+    <div
+  className="absolute inset-0 h-full w-full dottedBackground"
+><Outlet /></div>
   )
 }

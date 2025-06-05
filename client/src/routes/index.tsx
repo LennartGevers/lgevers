@@ -37,9 +37,11 @@ const posts = [
   },
 ];
 
+// bg-[#1e2127] text-[#d4d4d4]
+
 function BlogLandingPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1e2127] text-[#d4d4d4] px-4 relative overflow-hidden font-sans">
+    <div className="flex flex-col items-center justify-center min-h-screen  px-4 relative overflow-hidden font-sans">
       {/* Animated background gradient */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 animate-gradient-move"
@@ -48,13 +50,6 @@ function BlogLandingPage() {
             'linear-gradient(120deg, #23262b 0%, #282c34 50%, #1e2127 100%)',
           opacity: 0.18,
         }}
-      />
-      {/* Transparent forest image overlay */}
-      <img
-        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
-        alt="Forest background"
-        className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-10 -z-20"
-        aria-hidden="true"
       />
       {/* Minimal Navigation Header */}
       <nav className="w-full max-w-3xl flex justify-between items-center py-6 mb-8">
