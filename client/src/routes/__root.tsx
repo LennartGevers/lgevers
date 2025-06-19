@@ -13,7 +13,7 @@ function RootComponent(): React.ReactNode {
   return (
     <div className="absolute inset-0 min-h-screen h-full w-full flex flex-col items-center justify-between text-[#d4d4d4] font-sans">
       <Header />
-      <TransformWrapper>
+      <TransformWrapper limitToBounds={false} minScale={0.5} maxScale={2}>
         <TransformComponent>
           <Outlet />
         </TransformComponent>

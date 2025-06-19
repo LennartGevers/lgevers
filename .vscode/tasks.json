@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "client",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - client",
+			"detail": "tsc -b && vite build"
+		},
+		{
+			"type": "npm",
+			"script": "deploy",
+			"path": "client",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: deploy page to github pages",
+		}
+	]
+}
